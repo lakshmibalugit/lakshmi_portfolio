@@ -13,7 +13,7 @@ const PeerReviewCard = ({ image, name, role, text }: Props) => {
         <div className='m-2'>
             <Image src={image} alt='peer' width={60} height={60} className='rounded-full' />
             <p className='mt-6 text-base text-gray-200 font-medium'>
-                "{text}"
+                &quot;{text}&quot;
             </p>
             <h1 className='mt-6 text-xl font-bold text-cyan-200'>
                 {name}
