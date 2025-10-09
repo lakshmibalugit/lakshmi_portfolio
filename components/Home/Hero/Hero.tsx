@@ -1,14 +1,11 @@
 'use client';
 import Image from 'next/image'
 import React from 'react'
-import { BsArrowRight } from 'react-icons/bs';
 import Typewriter from 'typewriter-effect';
 import ParticlesHero from './ParticleBackground';
+import { Sparkles } from 'lucide-react';
 
 const Hero = () => {
-    const buttonOnClick = () => {
-        window.open('https://github.com/Vicky310', '_blank', 'noopener,noreferrer');
-    }
     return (
         <div id='home' className='relative h-screen flex items-center justify-center text-white
     overflow-hidden flex-col'>
@@ -40,13 +37,15 @@ const Hero = () => {
                         }} />
                     </span>
                 </h2>
-                <button
-                    onClick={buttonOnClick}
-                    data-aos='fade-up' data-aos-delay='600' className='mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900
-                transition-all duration-300 cursor-pointer rounded-full text-lg font-medium'>
-                    <span>See my work</span>
-                    <BsArrowRight className='w-5 h-5 ml-2 inline-block' />
-                </button>
+                <span data-aos='fade-up' data-aos-delay='200' className='mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center'>Want to know more?</span>
+                <a
+                    href="https://portfolio-chat-seven.vercel.app/"
+                    rel="noopener noreferrer"
+                    className='mt-6 inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-5 py-3 rounded-full transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(139,92,246,0.7)]'
+                >
+                    <Sparkles className='w-5 h-5 animate-pulse' />
+                    Ask My AI Assistant
+                </a>
             </div>
         </div>
     )
