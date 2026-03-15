@@ -1,7 +1,6 @@
 import { BiBadge, BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
 import { BsDatabase } from "react-icons/bs";
 import { FaCodepen, FaLinkedin, FaReact } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { SiApachehadoop, SiApachespark, SiAwslambda, SiHive, SiJavascript, SiNextdotjs, SiNodedotjs, SiPython, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 export const NAVLINKS = [

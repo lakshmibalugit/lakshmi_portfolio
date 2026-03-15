@@ -25,7 +25,7 @@ const Resume = () => {
                     <div className='mt-10' data-aos="zoom-out" data-aos-anchor-placement='top-center' data-aos-delay='300'>
                         {EDUCATION.map(education => {
                             return (
-                                <ResumeCard key={education.id} Icon={education.icon} role={education.role} description={education.desc} date={education.date} />
+                                <ResumeCard key={education.id} Icon={education.icon} role={education.role} description={education.desc} />
                             )
                         })}
                     </div>
