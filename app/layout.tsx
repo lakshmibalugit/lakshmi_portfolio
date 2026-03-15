@@ -11,8 +11,8 @@ const font = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Vigneshwaran's Portfolio",
-  description: "Professional portfolio of Vigneshwaran Balasubramani",
+  title: "Lakshmi's Portfolio",
+  description: "Professional portfolio of Lakshmi Balu",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} antialiased bg-[#0d0d1f]`}
+        className={`${font.className} antialiased bg-white`}
       >
         <ResponsiveNav />
         {children}

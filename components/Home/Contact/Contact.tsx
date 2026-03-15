@@ -39,11 +39,11 @@ const Contact = () => {
             <div className='w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
                 {/* LEFT SECTION */}
                 <div>
-                    <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200'>
+                    <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800'>
                         Let’s Build Something Great!
                     </h1>
-                    <p className='text-gray-400 mt-6 text-base sm:text-lg'>
-                        Get in touch for freelance or full-time full stack projects — from MVPs to enterprise solutions.
+                    <p className='text-gray-600 mt-6 text-base sm:text-lg'>
+                        Get in touch for data engineering projects — from ETL pipelines to big data analytics solutions.
                     </p>
 
                     <div className='mt-7'>
@@ -73,7 +73,7 @@ const Contact = () => {
                 <div
                     data-aos="zoom-in"
                     data-aos-anchor-placement='top'
-                    className='md:p-10 p-5 bg-[#131332] rounded-lg h-[550px] flex items-center justify-center'
+                    className='md:p-10 p-5 bg-gray-100 rounded-lg h-[550px] flex items-center justify-center'
                 >
                     {status === "success" ? (
                         <ContactSuccess />
@@ -84,38 +84,38 @@ const Contact = () => {
                                 name='name'
                                 required
                                 placeholder='Name'
-                                className='px-4 py-3.5 bg-[#363659] text-white outline-none rounded-md w-full placeholder:text-white/70'
+                                className='px-4 py-3.5 bg-white text-black outline-none rounded-md w-full placeholder:text-gray-500 border border-gray-300'
                             />
                             <input
                                 type='email'
                                 name='email'
                                 required
                                 placeholder='Email Address'
-                                className='px-4 py-3.5 mt-6 bg-[#363659] text-white outline-none rounded-md w-full placeholder:text-white/70'
+                                className='px-4 py-3.5 mt-6 bg-white text-black outline-none rounded-md w-full placeholder:text-gray-500 border border-gray-300'
                             />
                             <input
                                 type='text'
                                 name='phone'
                                 required
                                 placeholder='Phone Number'
-                                className='px-4 py-3.5 mt-6 bg-[#363659] text-white outline-none rounded-md w-full placeholder:text-white/70'
+                                className='px-4 py-3.5 mt-6 bg-white text-black outline-none rounded-md w-full placeholder:text-gray-500 border border-gray-300'
                             />
                             <textarea
                                 name='message'
                                 placeholder='Your Message'
                                 required
-                                className='px-4 py-3.5 mt-6 bg-[#363659] text-white outline-none rounded-md w-full placeholder:text-white/70 h-[10rem]'
+                                className='px-4 py-3.5 mt-6 bg-white text-black outline-none rounded-md w-full placeholder:text-gray-500 border border-gray-300 h-[10rem]'
                             ></textarea>
 
                             {status === "error" && (
-                                <p className="mt-4 text-center text-sm font-medium text-red-400 bg-red-400/10 py-2 rounded-md">
+                                <p className="mt-4 text-center text-sm font-medium text-red-600 bg-red-100 py-2 rounded-md">
                                     ❌ Failed to send. Please try again.
                                 </p>
                             )}
 
                             <button
                                 disabled={status === "loading"}
-                                className='mt-8 px-12 py-4 bg-blue-950 hover:bg-blue-900 transition-all duration-300 cursor-pointer text-white rounded-full w-full'
+                                className='mt-8 px-12 py-4 bg-blue-600 hover:bg-blue-700 transition-all duration-300 cursor-pointer text-white rounded-full w-full'
                             >
                                 {status === "loading" ? "Sending..." : "Send Message"}
                             </button>

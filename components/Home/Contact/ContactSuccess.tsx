@@ -4,10 +4,10 @@ import { FaLinkedin } from 'react-icons/fa';
 const ContactSuccess = () => {
     return (
         <div className='text-center space-y-4'>
-            <h2 className='text-2xl font-bold text-green-400'>
+            <h2 className='text-2xl font-bold text-green-600'>
                 ✅ Message Sent Successfully!
             </h2>
-            <p className='text-gray-300 text-base leading-relaxed'>
+            <p className='text-gray-600 text-base leading-relaxed'>
                 Thank you for reaching out. I’ll get back to you as soon as possible.
                 <br />
                 For a faster response, feel free to connect with me on LinkedIn and send a message there.

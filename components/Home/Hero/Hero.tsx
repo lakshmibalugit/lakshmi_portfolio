@@ -3,11 +3,10 @@ import Image from 'next/image'
 import React from 'react'
 import Typewriter from 'typewriter-effect';
 import ParticlesHero from './ParticleBackground';
-import { Sparkles } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <div id='home' className='relative h-screen flex items-center justify-center text-white
+        <div id='home' className='relative h-screen flex items-center justify-center text-black
     overflow-hidden flex-col'>
             <ParticlesHero />
             <div className='relative z-10 flex flex-col items-center'>
@@ -15,19 +14,19 @@ const Hero = () => {
                     className='rounded-full border-8 border-[#0c0c48aa]'
                     data-aos='fade-up' />
                 <h1 data-aos='fade-up' data-aos-delay='200' className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 text-center font-bold tracking-wide'>
-                    Creating web products, <br />
-                    brands,
-                    <span className='text-cyan-200'> and experiences.</span></h1>
+                    Transforming data into <br />
+                    actionable insights, <br />
+                    <span className='text-blue-600'>and intelligent solutions.</span></h1>
                 <h2 data-aos='fade-up' data-aos-delay='400' className='mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center'>
-                    Hi! I&apos;m Vicky - A Passionate
-                    <span className='text-cyan-200 font-bold'>
+                    Hi! I&apos;m Lakshmi - A Passionate
+                    <span className='text-blue-600 font-bold'>
                         <Typewriter options={{
                             strings: [
-                                'Frontend Developer',
-                                'Backend Developer',
-                                'Fullstack Developer',
-                                'MERN Developer',
-                                'AI enthusiast'
+                                'Data Engineer',
+                                'Data Analyst',
+                                'Business Intelligence Specialist',
+                                'Data Storyteller',
+                                'Insights Developer'
                             ],
                             autoStart: true,
                             loop: true,
@@ -37,15 +36,6 @@ const Hero = () => {
                         }} />
                     </span>
                 </h2>
-                <span data-aos='fade-up' data-aos-delay='200' className='mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center'>Want to know more?</span>
-                <a
-                    href="https://portfolio-chat-seven.vercel.app/"
-                    rel="noopener noreferrer"
-                    className='mt-6 inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-5 py-3 rounded-full transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(139,92,246,0.7)]'
-                >
-                    <Sparkles className='w-5 h-5 animate-pulse' />
-                    Ask My AI Assistant
-                </a>
             </div>
         </div>
     )

@@ -28,7 +28,7 @@ export default function ParticlesHero() {
     const options: ISourceOptions = useMemo(
         () => ({
             background: {
-                color: { value: "transparent" }, // Transparent for overlay use
+                color: { value: "transparent" },
             },
             fullScreen: {
                 enable: false,
@@ -36,36 +36,38 @@ export default function ParticlesHero() {
             fpsLimit: 60,
             interactivity: {
                 events: {
-                    onClick: { enable: true, mode: "push" },
-                    onHover: { enable: true, mode: "repulse" },
+                    onClick: { enable: true, mode: "grab" },
+                    onHover: { enable: true, mode: "connect" },
                 },
                 modes: {
-                    push: { quantity: 4 },
-                    repulse: { distance: 100, duration: 0.4 },
+                    grab: { distance: 400, line_linked: { opacity: 0.5 } },
+                    connect: { distance: 150, line_linked: { opacity: 0.5 } },
                 },
             },
             particles: {
-                color: { value: "#ffffff" },
+                color: { value: ["#3b82f6", "#60a5fa", "#93c5fd"] },
                 links: {
-                    color: "#ffffff",
+                    color: "#60a5fa",
                     distance: 150,
                     enable: true,
                     opacity: 0.4,
-                    width: 1,
+                    width: 2,
                 },
                 move: {
+                    angle: 45,
                     direction: MoveDirection.none,
                     enable: true,
-                    outModes: { default: OutMode.out },
+                    outModes: { default: OutMode.bounce },
                     speed: 2,
+                    straight: false,
                 },
                 number: {
                     density: { enable: true, area: 800 },
-                    value: 60,
+                    value: 100,
                 },
-                opacity: { value: 0.5 },
+                opacity: { value: 0.6 },
                 shape: { type: "circle" },
-                size: { value: { min: 1, max: 4 } },
+                size: { value: { min: 2, max: 6 } },
             },
             detectRetina: true,
         }),

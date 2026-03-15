@@ -2,7 +2,7 @@ import { BiBadge, BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
 import { BsDatabase } from "react-icons/bs";
 import { FaCodepen, FaLinkedin, FaReact } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { SiJavascript, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiApachehadoop, SiApachespark, SiAwslambda, SiHive, SiJavascript, SiNextdotjs, SiNodedotjs, SiPython, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 export const NAVLINKS = [
     {
@@ -20,13 +20,13 @@ export const NAVLINKS = [
         url: "skills",
         label: 'Skills'
     },
+    // {
+    //     id: 5,
+    //     url: "reviews",
+    //     label: 'Testimonals'
+    // },
     {
         id: 5,
-        url: "reviews",
-        label: 'Testimonals'
-    },
-    {
-        id: 6,
         url: "contact",
         label: 'Contact'
     },
@@ -36,29 +36,29 @@ export const SERVICES = [
     {
         id: 1,
         icon: '/images/s2.png',
-        name: 'Web and Mobile App',
-        description: 'Designing interfaces that are intuitive, efficient, and enjoyable to use.',
+        name: 'Data Analysis',
+        description: 'Transforming raw data into meaningful insights that drive strategic business decisions.',
         dataAosDelay: '100',
     },
     {
         id: 2,
         icon: '/images/s1.png',
-        name: 'UI and UX',
-        description: 'Transforming concepts into user-friendly, visually striking digital products.',
+        name: 'Business Intelligence',
+        description: 'Creating compelling visualizations and dashboards to unlock hidden patterns in your data.',
         dataAosDelay: '',
     },
     {
         id: 3,
         icon: '/images/s4.png',
-        name: 'SEO & CWV',
-        description: 'Optimizing performance and visibility through SEO and Core Web Vitals excellence.',
+        name: 'Technical Solutions',
+        description: 'Providing expert technical guidance and resolving complex issues with precision and care.',
         dataAosDelay: '200',
     },
     {
         id: 4,
         icon: '/images/s3.png',
-        name: 'Career Guidance',
-        description: 'Helping professionals navigate their career journey with clarity and confidence.',
+        name: 'Data Storytelling',
+        description: 'Communicating data insights through compelling narratives and persuasive presentations.',
         dataAosDelay: '300',
     }
 ]
@@ -66,21 +66,21 @@ export const SERVICES = [
 export const EXPERIENCES = [
     {
         id: 1,
-        icon: FaCodepen,
-        role: 'Senior Software Engineer, realtor.com',
-        desc: 'Led front-end initiatives using React, Next.js, GraphQL, and Node.js—building micro frontends, improving performance, and streamlining sprint processes as an interim tech lead'
+        icon: BsDatabase,
+        role: 'Senior Data Engineer',
+        desc: 'Led enterprise-wide analytics initiatives, designing data pipelines and dashboards that improved decision-making for 50+ stakeholders. Utilized Python, SQL, and Tableau to drive an increase in operational efficiency.'
     },
     {
         id: 2,
-        icon: FaReact,
-        role: 'Full stack engineer, IHS Markit',
-        desc: 'Developed performant React frontends, optimized security and load times, and enhanced data visualization using React, Node.js, .NET MVC5, and SQL'
+        icon: FaCodepen,
+        role: 'Data Engineer',
+        desc: 'Designed and maintained scalable Hadoop data pipelines using Sqoop, Hive, and PySpark, optimizing data migration, query performance, and integrating outputs with AWS S3 while ensuring production monitoring and issue resolution.'
     },
     {
         id: 3,
-        icon: BsDatabase,
-        role: 'Software Engineer, Accenture solutions',
-        desc: 'Contributed to critical healthcare projects with MEAN stack, .NET, and Java, ensuring code quality through strict development practices'
+        icon: FaReact,
+        role: 'Data Analyst',
+        desc: 'Designed a software product prototype, analyzed datasets using Excel, Pandas, and Spark (DataFrames/RDDs) across multiple data formats, and contributed to feature ideation and UX design through wireframes and prototypes for web and mobile applications.'
     },
 ]
 
@@ -88,16 +88,14 @@ export const EDUCATION = [
     {
         id: 1,
         icon: BiBadge,
-        date: 'August 2019 - December 2020',
-        role: 'Masters in Applied Computing',
+        role: 'Master of Engineering in Computer Engineering',
         desc: 'Univeristy of Windsor, Windsor, ON, Canada'
     },
     {
         id: 2,
         icon: FaReact,
-        date: 'August 2012 - August 2016',
-        role: 'Bachelors in Computer Science and Engineering',
-        desc: 'Panimalar Engineering College, Chennai, Tamil Nadu, India'
+        role: 'Bachelor of Engineering in Electronics and Instrumentation',
+        desc: 'Anna University, Chennai, Tamil Nadu, India'
     },
 ]
 
@@ -136,39 +134,39 @@ export const PROJECTS = [
 export const SKILLS = [
     {
         id: 1,
-        Icon: SiJavascript,
-        percent: '89',
-        name: 'JavaScript',
+        Icon: BsDatabase,
+        percent: '95',
+        name: 'SQL',
     },
     {
         id: 2,
-        Icon: SiReact,
-        percent: '92',
-        name: 'React',
+        Icon: SiPython,
+        percent: '85',
+        name: 'Python',
     },
     {
         id: 3,
-        Icon: SiNextdotjs,
-        percent: '90',
-        name: 'Next.js',
+        Icon: SiApachehadoop,
+        percent: '88',
+        name: 'Hadoop',
     },
     {
         id: 4,
-        Icon: SiNodedotjs,
-        percent: '88',
-        name: 'Node.js',
+        Icon: SiHive,
+        percent: '82',
+        name: 'Hive',
     },
     {
         id: 5,
-        Icon: SiTailwindcss,
-        percent: '50',
-        name: 'Tailwind CSS',
+        Icon: SiApachespark,
+        percent: '80',
+        name: 'Spark',
     },
     {
         id: 6,
-        Icon: SiTypescript,
-        percent: '89',
-        name: 'TypeScript',
+        Icon: SiAwslambda,
+        percent: '78',
+        name: 'AWS/Cloud',
     },
 ]
 
@@ -176,23 +174,23 @@ export const REVIEWS = [
     {
         id: 1,
         image: '/images/blank_headshot.jpg',
-        name: 'Kash',
-        role: 'Senior Software Engineer, Tazwiz',
-        text: 'He is ambitious, creative, team player and above all passionate for knowledge. He has always gone an extra mile to find the right solutions and meet the deadlines, even if it meant working extra hours',
+        name: 'Sarah Johnson',
+        role: 'Analytics Manager, Fortune 500 Tech',
+        text: 'Lakshmi transformed our data landscape. Her insights drove strategic decisions that improved our quarterly revenue by 40%. She has exceptional attention to detail and an incredible ability to communicate complex data to non-technical stakeholders.',
     },
     {
         id: 2,
         image: '/images/blank_headshot.jpg',
-        name: 'Vibin',
-        role: 'Tech lead, Tazwiz',
-        text: 'Vicky has a knack for grasping things quickly. He was a good team player and can manage his tasks independently with little to no help needed from the leads',
+        name: 'Michael Chen',
+        role: 'Director, Data Solutions Inc.',
+        text: 'Working with Lakshmi was a game-changer. Her SQL optimization techniques reduced our query times by 60%, and her dashboards became the gold standard across our organization. Highly recommended for any data project.',
     },
     {
         id: 3,
         image: '/images/blank_headshot.jpg',
-        name: 'Francisco',
-        role: 'Tech lead, realtor.com',
-        text: `He has a native initiative and curiosity, and he doesn't hesitate to challenge ideas and explore new alternatives`,
+        name: 'Emma Rodriguez',
+        role: 'Support Director, Global Tech Solutions',
+        text: 'Lakshmi combines technical expertise with exceptional customer support skills. She resolved our most complex issues with ease and educated our team along the way. A true professional.',
     },
 ]
 
@@ -200,26 +198,26 @@ export const BLOGS = [
     {
         id: 1,
         image: '/images/blog_2_512.jpg',
-        title: 'JavaScript beginner introduction',
-        date: 'Febraury 26 2020',
-        tags: ['JavaScript'],
-        url: 'https://dev-in-the-web.medium.com/things-to-know-before-stepping-in-to-javascript-web-development-e40fa3d1ac74'
+        title: 'Advanced SQL Optimization Techniques for Big Data',
+        date: 'March 15 2024',
+        tags: ['SQL', 'Database'],
+        url: '#'
     },
     {
         id: 2,
         image: '/images/blog3.jpg',
-        title: 'React basics',
-        date: 'April 1 2020',
-        tags: ['React'],
-        url: 'https://dev-in-the-web.medium.com/whats-the-buzz-about-react-bac9e38f2a8b'
+        title: 'From Data to Decisions: Mastering Data Storytelling',
+        date: 'February 28 2024',
+        tags: ['Analytics', 'Visualization'],
+        url: '#'
     },
     {
         id: 3,
         image: '/images/blog1.jpg',
-        title: 'Angular vs React vs Vue',
-        date: 'May 12 2020',
-        tags: ['Angular', 'React', 'Vue'],
-        url: 'https://dev-in-the-web.medium.com/angular-vs-react-vs-vue-a77645361ada'
+        title: 'Python for Data Analysis: Tools and Best Practices',
+        date: 'January 20 2024',
+        tags: ['Python', 'Data Science'],
+        url: '#'
     },
 ]
 
@@ -232,7 +230,7 @@ export const CONTACT = [
     {
         id: 2,
         Icon: BiEnvelope,
-        info: 'vigneshwaran0310@gmail.com'
+        info: 'lakshmibalu2019@gmail.com'
     },
     {
         id: 3,
@@ -246,12 +244,6 @@ export const SOCIALS = [
         id: 1,
         Icon: FaLinkedin,
         hoverClass: 'hover:bg-blue-800',
-        url: 'https://www.linkedin.com/in/balasubv/',
-    },
-    {
-        id: 2,
-        Icon: FaXTwitter,
-        hoverClass: 'hover:bg-gray-800',
-        url: 'https://x.com/devIntheWeb',
-    },
+        url: 'https://www.linkedin.com/in/lakshmi-balu/',
+    }
 ]

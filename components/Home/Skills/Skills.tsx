@@ -5,18 +5,18 @@ import Tilt from 'react-parallax-tilt'
 
 const Skills = () => {
     return (
-        <div id='skills' className='text-white pt-16 pb-16'>
-            <h1 className='text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white'>
-                My <span className='text-cyan-300'>Skills</span>
+        <div id='skills' className='text-black pt-16 pb-16'>
+            <h1 className='text-center text-2xl md:text-4xl xl:text-5xl font-bold text-black'>
+                My <span className='text-blue-600'>Skills</span>
             </h1>
             <div className='flex flex-wrap justify-center gap-6 mt-16'>
                 {SKILLS.map(({ id, Icon, name, percent }, i) => {
                     return (
                         <Tilt key={id} scale={1.5} transitionSpeed={400}>
-                            <div className='bg-[#14134145] text-center w-40 h-48 rounded-3xl flex flex-col
+                            <div className='bg-gray-100 text-center w-40 h-48 rounded-3xl flex flex-col
                             items-center justify-center shadow-lg transition hover:scale-105'
                                 data-aos="flip-right" data-aos-anchor-placement='top-center' data-aos-delay={i * 100}>
-                                <div className='text-5xl mb-4 text-gray-300'>
+                                <div className='text-5xl mb-4 text-gray-600'>
                                     <Icon />
                                 </div>
                                 <p className='text-2xl font-semibold'>
