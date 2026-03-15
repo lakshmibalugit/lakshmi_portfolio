@@ -13,7 +13,7 @@ const ContactSuccess = () => {
                 For a faster response, feel free to connect with me on LinkedIn and send a message there.
             </p>
             <a
-                href="https://www.linkedin.com/in/balasubv/"
+                href="https://www.linkedin.com/in/lakshmi-balu/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className='inline-flex items-center gap-2 bg-[#0077B5] hover:bg-[#006097] text-white px-5 py-3 rounded-full transition-all duration-300'
