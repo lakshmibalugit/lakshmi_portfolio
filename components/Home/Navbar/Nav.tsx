@@ -47,7 +47,7 @@ const Nav = ({ openNav }: Props) => {
                     <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-600 hover:bg-blue-700 
                     transition-all duration-300 text-white flex items-center space-x-2'>
                         <BiDownload className='w-5 h-5' />
-                        <a href='/files/vigneshwaran_resume.pdf' download>Download Resume</a>
+                        <a href='/files/lakshmi_resume.pdf' download>Download Resume</a>
                     </button>
                     <HiBars3BottomRight onClick={openNav} className='w-8 h-8 cursor-pointer text-white lg:hidden' />
                 </div>
